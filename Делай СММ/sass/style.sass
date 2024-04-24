@@ -1,0 +1,383 @@
+*
+    box-sizing: border-box
+
+.header
+    display: flex
+    max-width: 1440px
+    background: rgba(18, 20, 69, 1)
+    &_list
+        .header_wrap
+            ul
+                display: flex
+                justify-content: space-around
+                align-items: center
+                text-align: left
+                list-style-type: none
+                margin-top: 20px
+                height: 50px
+                position: sticky
+                li
+                    display: inline
+                    margin-right: 40px
+                    transition: 0.7s
+                    a
+                        text-decoration: none
+                        color: white
+                .logo
+                    margin-right: 20px
+                    img
+                        width: 80px
+                        height: 80px
+                .special
+                    background-color: rgba(229, 0, 2, 1)
+                    color: white
+                    padding: 10px
+                    border-radius: 8px
+                    cursor: pointer
+                    transition: 0.5s
+                .special:hover
+                    background-color: black
+            ul:hover li
+                filter: blur(2px)
+            ul li:hover
+                filter: blur(0px)
+            ul li:first-child, hover
+                filter: blur(0px)
+            ul li:last-child, hover
+                filter: blur(0px)
+
+.title
+    max-width: 1440px
+    height: 800px
+    background-image: url(../img/main_bg.png)
+    overflow: auto
+    &_content
+        .descr_header
+            margin-top: 240px
+            color: #FFF
+            text-align: center
+            font-family: Acrom
+            font-size: 96px
+            font-style: normal
+            font-weight: 800
+            line-height: normal
+        .descr_subheader
+            color: #FFF
+            text-align: center
+            font-family: Acrom
+            font-size: 28px
+            font-style: normal
+            font-weight: 400
+            line-height: normal
+        .arrow
+            button 
+                width: 60px
+                height: 60px
+                bottom: 40px
+                right: 40px
+                margin: 110px 48% 0 48%
+                background-color: rgba(18, 20, 69, 1)
+                color: #FFF
+                border-radius: 50px
+                text-align: center
+                font-size: 30px
+                border: #004dff
+                transition: 0.5s
+            button:hover 
+                transform: scale(1.1)
+                background-color: rgba(229, 0, 2, 1)
+            button:active 
+                background-color: rgba(229, 0, 2, 1)
+            .arrow-up 
+                width: 0
+                height: 0
+                border-left: 10px solid transparent
+                border-right: 10px solid transparent
+                margin-left: auto
+                margin-right: auto
+                margin-top: 50%
+                margin-bottom: 60%
+                border-top: 15px solid white
+
+.not
+    max-width: 1440px
+    min-height: 766px
+    &_content
+        margin-top: 120px
+        &_header
+            color: #000
+            text-align: center
+            font-family: Acrom
+            font-size: 64px
+            font-style: normal
+            font-weight: 800
+            line-height: normal
+        &_descr
+            display: flex
+            margin-top: 120px
+            text-align: center
+            &_img
+                margin-top: 60px
+                width: 566px
+                height: 335px
+                text-align: center
+            .not_list
+                width: 570px
+                margin-left: 28px
+                p
+                    width: 470px
+                    margin: 15px 15px 15px 15px
+                    color: white
+                    text-align: center
+                .point1
+                    padding: 10px
+                    background-color: rgba(18, 20, 69, 1)
+                    display: flex
+                    border-radius: 20px
+                    transition: 0.5s
+                    height: 120px
+                    p
+                        height: 70px
+                    img
+                        margin-left: 20px
+                .point1:hover
+                    background-color: rgba(229, 0, 2, 1)
+                .point2
+                    display: flex
+                    margin-top: 49px
+                    padding: 10px
+                    background-color: rgba(18, 20, 69, 1)
+                    border-radius: 20px
+                    transition: 0.5s
+                    height: 120px
+                    p
+                        height: 70px
+                        margin-top: 25px
+                    img
+                        margin-left: 20px
+                .point2:hover
+                    background-color: rgba(229, 0, 2, 1)
+                .point3
+                    display: flex
+                    margin-top: 49px
+                    padding: 10px
+                    background-color: rgba(18, 20, 69, 1)
+                    border-radius: 20px
+                    transition: 0.5s
+                    height: 120px
+                    p
+                        height: 70px
+                        w
+                        margin-top: 25px
+                    img
+                        margin-left: 20px
+                .point3:hover
+                    background-color: rgba(229, 0, 2, 1)
+            
+.why
+    background-color: rgba(18, 20, 69, 1)
+    max-width: 1440px
+    height: 1120px
+    &_content
+        overflow: auto
+        &_header
+            margin-left: 7%
+            border-left: 6px rgba(229, 0, 2, 1) solid
+            text-align: center
+            h2
+                color: white
+                text-align: left
+                margin-left: 16px
+                font-family: Acrom
+                font-size: 40px
+                font-style: normal
+                font-weight: 800
+                line-height: normal
+                margin-top: 120px
+        &_block
+            display: flex
+            justify-content: space-evenly
+            .block1
+                margin-top: 100px
+                width: 370px
+                height: 670px
+                background-color: #fff
+                border-radius: 10px
+                img
+                    margin: 54px 97px 51px 97px
+                h2
+                    font-family: TT Norms
+                    font-size: 24px
+                    font-style: normal
+                    font-weight: 700
+                    line-height: normal
+                    margin-left: 40px
+                p
+                    font-family: TT Norms
+                    font-size: 16px
+                    font-style: normal
+                    font-weight: 400
+                    line-height: 22px
+                    width: 290px
+                    height: 240px
+                    margin-left: 40px
+                    margin-top: 16px
+            .block2
+                margin-top: 100px
+                width: 370px
+                height: 670px
+                background-color: #fff
+                border-radius: 10px
+                img
+                    margin: 46px 67px 47px 67px
+                h2
+                    font-family: TT Norms
+                    font-size: 24px
+                    font-style: normal
+                    font-weight: 700
+                    line-height: normal
+                    margin-left: 40px
+                p
+                    font-family: TT Norms
+                    font-size: 16px
+                    font-style: normal
+                    font-weight: 400
+                    line-height: 22px
+                    width: 290px
+                    height: 240px
+                    margin-left: 40px
+                    margin-top: 16px
+            .block3
+                margin-top: 100px
+                width: 370px
+                height: 670px
+                background-color: #fff
+                border-radius: 10px
+                img
+                    margin: 57px 55px 55px 55px
+                h2
+                    font-family: TT Norms
+                    font-size: 24px
+                    font-style: normal
+                    font-weight: 700
+                    line-height: normal
+                    margin-left: 40px
+                p
+                    font-family: TT Norms
+                    font-size: 16px
+                    font-style: normal
+                    font-weight: 400
+                    line-height: 22px
+                    width: 290px
+                    height: 240px
+                    margin-left: 40px
+                    margin-top: 16px
+.more
+    max-width: 1440px
+    max-height: 770px
+    &_content
+        h2
+            color: #000
+            text-align: center
+            font-family: Acrom
+            font-size: 64px
+            font-style: normal
+            font-weight: 800
+            line-height: normal
+            margin-top: 120px
+        &_descr
+            display: flex
+            justify-content: space-around
+        &_list
+            margin-top: 100px
+            margin-left: 100px
+            p
+                width: 470px
+                margin: 15px
+            img
+                margin-left: 20px
+            .point1
+                display: flex
+                background-color: rgba(18, 20, 69, 1)
+                color: #fff
+                width: 570px
+                border-radius: 20px
+                padding: 10px
+                text-align: center
+                transition: 0.5s
+            .point1:hover
+                background-color: rgba(229, 0, 2, 1)
+            .point2
+                display: flex
+                background-color: rgba(18, 20, 69, 1)
+                color: #fff
+                width: 570px
+                border-radius: 20px
+                padding: 10px
+                text-align: center
+                margin-top: 30px
+                transition: 0.5s
+            .point2:hover
+                    background-color: rgba(229, 0, 2, 1)
+            .point3
+                display: flex
+                background-color: rgba(18, 20, 69, 1)
+                color: #fff
+                width: 570px
+                border-radius: 20px
+                padding: 10px
+                text-align: center
+                margin-top: 30px
+                transition: 0.5s
+            .point3:hover
+                    background-color: rgba(229, 0, 2, 1)
+    .more_img
+        margin-left: 80px
+        margin-top: 100px
+
+.ekb
+    max-width: 1440px
+    background-color: rgba(18, 20, 69, 1)
+    margin-top: 150px
+    &_content
+        overflow: auto
+        display: flex
+        justify-content: center
+        &_img
+            margin-top: 50px
+        &_descr
+            margin-top: 128px
+            position: relative
+            img
+                position: absolute
+                top: 30px
+                right: 10px
+            &_text
+                color: #FFF
+                font-family: TT Norms
+                font-size: 18px
+                font-style: normal
+                font-weight: 400
+                line-height: 24px
+                width: 765px
+                margin-top: 20px
+            &_supheader
+                color: #FFF
+                font-family: TT Norms
+                font-size: 18px
+                font-style: normal
+                font-weight: 700
+                line-height: normal
+                margin-top: 30px
+
+.feedback
+    &_content
+        &_header
+            color: #000
+            font-family: Acrom
+            font-size: 64px
+            font-style: normal
+            font-weight: 800
+            line-height: normal
+            text-align: center
+            margin-top: 150px
